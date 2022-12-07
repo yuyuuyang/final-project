@@ -1,0 +1,110 @@
+body {
+    font-family:"Montserrat","Source Sans Pro", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #f1f1f1;
+    margin:0;
+    text-align:left;
+}
+
+.header {
+    position: relative;
+    height: 80vh;
+    min-height: 600px;
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/header.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #FFFFFF;
+  }
+
+.header-content h5 {
+    text-align:center;
+	color: #658354;
+    padding-top:150px;
+	font-size: 1.8rem;
+	line-height: 1.875;
+	margin-bottom: 0.3rem;
+	letter-spacing: .4rem;
+}
+
+.header-content h1 {
+    text-align:center;
+    padding:24px;
+	font-family: "Montserrat", serif;
+    font-weight:bold;
+	font-size: 3.8rem;
+	color: #313131;
+	line-height: 1.25;
+    letter-spacing: .2rem;
+	margin-bottom: 1.2rem;
+}
+
+
+.header-content h6 {
+    text-align:center;
+    padding-bottom:12px;
+	font-family: "Montserrat", serif;
+    font-weight:bold;
+	font-size: 1.0 rem;
+	color: #313131;
+	line-height: 1.25;
+    letter-spacing:0.1rem;
+	margin-bottom: 1.2rem;
+}
+
+.container{
+    grid-column: 1/-1;
+    background-image:url("../images/header.jpg");
+    background-attachment: fixed; /* Parallax effect */     
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */
+    color: white;
+    height: 600px;                /* Parallax effect */
+}
+
+
+
+  .container-home div:first-child{
+    grid-column: 1/-1;
+    background-image:url("../images/header.jpg");
+    background-attachment: fixed; /* Parallax effect */     
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */
+    color: white;
+    height: 700px;                /* Parallax effect */
+  }
+
+  .skip {
+    background: black;
+    height: 30px;
+    left: 45%;
+    padding: 8px;
+    position: absolute;
+    transform: translateY(-600%);
+    transition: transform 0.3s;
+    color: white;
+}
+
+
+.skip:focus {
+    transform: translateY(-10%);
+}
+
+footer{
+    text-align:right;
+    font-size:15px;
+}
+
+a.active,a:hover{
+    text-decoration: underline;
+    transition: .5s;
+    color: #000;
+  }
+

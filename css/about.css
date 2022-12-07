@@ -1,0 +1,144 @@
+
+.film{
+  display: grid;
+  justify-self: center;
+  justify-content: space-around;
+  grid-template-columns:1fr; 
+}
+
+
+.film img { 
+	width: 100%;
+	padding: 20px;
+}
+
+
+h2{
+  text-align:center;
+  padding:24px;
+  font-family: "Montserrat", serif;
+  font-weight:bold;
+  font-size: 1.8rem;
+  color: white;
+  line-height: 1.25;
+  letter-spacing: .2rem;
+  margin-bottom: 1.2rem;
+  background:#658354;
+  
+}
+
+
+.container-about{
+  background-color:#fefbf6;
+}
+
+.container-about h1 {
+  text-align:center;
+  padding:24px;
+font-family: "Montserrat", serif;
+  font-weight:bold;
+font-size: 3.6rem;
+color: #313131;
+line-height: 1.25;
+  letter-spacing: .2rem;
+margin-bottom: 1.2rem;
+}
+
+.container-about .introduction p{
+  text-align:center;
+  padding:24px;
+  font-family: "Montserrat", serif;
+  font-weight:bold;
+  font-size: 1.2rem;
+  color: #313131;
+  line-height: 1.25;
+  letter-spacing: .1rem;
+  margin-bottom: 1.2rem;
+}
+
+.container-about #imageme{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  border-radius: 50%;
+  padding-bottom:20px;
+}
+
+b{
+  font-weight: bold;
+  font-size: 200%;
+}
+
+
+
+
+/* tablet display */
+@media screen and (min-width: 768px) {
+  .card{
+    display: grid;
+    width: 100%;
+  }
+
+  .film{
+    display: grid;
+    justify-self: center;
+    justify-content: space-around;
+    grid-template-columns:1fr 1fr 1fr; 
+  }
+  
+}
+
+/* desktop display */
+@media screen and (min-width: 992px) {
+.container-about #imageme{
+  display: grid;
+  margin-left: 200px;
+  margin-right: auto;
+  margin-bottom: 90px;
+  width: 400px;
+  border-radius: 50%;
+  padding-bottom:20px;
+}
+
+.container-about .introduction p{
+  margin-left: 700px;
+  margin-right:auto;
+  font-size: 22px;
+  font-weight: 500px;
+  color: black;
+  position: absolute;
+  top: 330px;
+  width: 600px;
+  overflow:hidden;
+  font-family: "Montserrat";
+  line-height: 115%; 
+
+}
+
+  .card{
+    display: grid;
+    width: 100%;
+  }
+
+  .film{
+    display: grid;
+    justify-self: center;
+    justify-content: space-around;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr; 
+  }
+  
+  .film img {
+    width: 80%;
+    margin: 20px 20px 2px 20px;
+  }
+
+  b{
+    font-weight: bold;
+    font-size: 150%;
+  }
+  
+  b.card-title{
+    text-align: baseline;
+  }
+}
