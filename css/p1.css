@@ -1,0 +1,70 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: montserrat;
+}
+
+nav{
+  background: #fefbf6;
+  height: 80px;
+  width: 100%;
+}
+
+label.logo{
+  color: #000;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+
+
+
+/* tablet display */
+@media screen and (min-width: 768px) {
+  
+}
+
+/* desktop display */
+@media screen and (min-width: 992px) {
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+
+  #check:checked ~ ul{
+    left: 0;
+}
+
+
+}
